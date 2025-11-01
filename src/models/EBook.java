@@ -16,9 +16,6 @@ public class EBook extends Book{
     public String getFileFormat() {
         return fileFormat;
     }
-    public void setFileFormat(String fileFormat) {
-        this.fileFormat = fileFormat;
-    }
 
     @Override
     public String toString() {
