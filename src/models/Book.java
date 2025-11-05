@@ -12,7 +12,9 @@ public class Book {
     }
 
     public Book(String title, String author){
-        this(title, author, null);
+        this.title = title;
+        this.author = author;
+        this.isbn = null;
     }
 
     public String getTitle() {
