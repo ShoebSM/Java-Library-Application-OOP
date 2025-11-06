@@ -1,6 +1,4 @@
-package main.java.com.javalibraryapp.book.models;
-
-import java.util.StringJoiner;
+package com.javalibraryapp.book.models;
 
 public class PrintedBook extends Book{
     private boolean isCheckedOut;

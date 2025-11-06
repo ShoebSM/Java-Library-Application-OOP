@@ -1,4 +1,4 @@
-package main.java.com.javalibraryapp.book.models;
+package com.javalibraryapp.book.models;
 
 public enum FileFormat {
         PDF(".pdf"),

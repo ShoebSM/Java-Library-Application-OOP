@@ -1,11 +1,12 @@
-package test.java.com.javalibraryapp.book;
+package com.javalibraryapp.book;
 
-import main.java.com.javalibraryapp.book.models.PrintedBook;
+import com.javalibraryapp.book.models.PrintedBook;
+import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 class PrintedBookTest {
     private PrintedBook Book1;
