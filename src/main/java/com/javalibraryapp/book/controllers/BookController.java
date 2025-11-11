@@ -1,6 +1,7 @@
 package com.javalibraryapp.book.controllers;
 
 import com.javalibraryapp.book.models.Book;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -25,6 +26,7 @@ public class BookController {
     public Book getBookByTitle(@PathVariable String title){
         for(Book book : bookList){
             if(book.getTitle().equalsIgnoreCase(title)){
+                System.out.println(ResponseEntity.ok(book));
                 return book;
             }
         }
@@ -34,10 +36,19 @@ public class BookController {
     @GetMapping("/isbn/{isbn}")
     public Book getBookByIsbn(@PathVariable String isbn){
         for(Book book : bookList){
-            if(book.getIsbn().equals(isbn)){
+            if(isbn.equals(book.getIsbn())){
+                System.out.println(ResponseEntity.ok(book));
                 return book;
             }
         }
         return null;
+    }
+
+    public List<Book> getBookList() {
+        return bookList;
+    }
+
+    public void setBookList(List<Book> bookList) {
+        this.bookList = bookList;
     }
 }

@@ -1,6 +1,5 @@
-package com.javalibraryapp.book;
+package com.javalibraryapp.book.models;
 
-import com.javalibraryapp.book.models.PrintedBook;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

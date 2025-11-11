@@ -1,7 +1,5 @@
-package com.javalibraryapp.book;
+package com.javalibraryapp.book.models;
 
-import com.javalibraryapp.book.models.Book;
-import org.junit.jupiter.api.BeforeAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
